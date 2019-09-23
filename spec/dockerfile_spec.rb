@@ -28,15 +28,15 @@ describe "Dockerfile" do
   end
 
   describe command("ruby -v") do
-    its(:stdout) { should match /2\.5/ }
+    its(:stdout) { should match /2\.6/ }
   end
 
   describe command("node --version") do
-    its(:stdout) { should match /10\.8\.0/ }
+    its(:stdout) { should match /12\.10\.0/ }
   end
 
   describe command("yarn --version") do
-    its(:stdout) { should match /1\.9\.4/ }
+    its(:stdout) { should match /1\.17\.3/ }
   end
 
   def os_version
